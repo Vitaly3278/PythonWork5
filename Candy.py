@@ -19,7 +19,7 @@ while True:
         value -= human
         print(f'Человек взял {human} конфет в {counter} ходе, остаток {value} конфет\n')
     else:
-        print(f'Поздравляем, Вы выиграли на {counter} ходе!!!!\n')
+        print(f'Поздравляем, Вы забрали {value} конфет и выиграли на {counter+1} ходе!!!!\n')
         exit()
 
     if value >= 29:
@@ -27,5 +27,5 @@ while True:
         value -= bot
         print(f'Бот взял {bot} конфет, остаток {value} конфет\n')
     else:
-        print(f'Выиграл Бот на {counter} ходе!!!!!!!\n')
+        print(f'Выиграл Бот, он взял {value} конфет на {counter+1} ходе!!!!!!!\n')
         exit()
